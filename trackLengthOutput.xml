@@ -1,16 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
-<controller id="TrackOutputController" name="Track Output Controller" author="Your Name">
-  <scriptfiles>
-    <scriptfile filename="trackLengthOutput.js"/>
-  </scriptfiles>
-  <controls>
-    <!-- Optional: map a button or knob if desired
-         Example: map MIDI CC 1 on channel 1 -->
-    <control>
-      <status>0xB0</status> <!-- MIDI CC on channel 1 -->
-      <midino>0x01</midino> <!-- CC number 1 -->
-      <group>[Master]</group>
-      <control>trackOutput</control> <!-- JS object name -->
-    </control>
-  </controls>
-</controller>
+<?xml version='1.0' encoding='utf-8'?>
+<MixxxControllerPreset mixxxVersion="1.8.0+" schemaVersion="1">
+    <info>
+        <name>Track information to midi output</name>
+        <author>Thomas Twigg</author>
+        <description>Sends track length as CC</description>
+    </info>
+    <controller id="Arduino">
+        <scriptfiles>
+            <file functionprefix="trackOutput" filename="trackOutput.js"/>
+        </scriptfiles>
+        <controls/>
+        <outputs/>
+    </controller>
+</MixxxControllerPreset>
