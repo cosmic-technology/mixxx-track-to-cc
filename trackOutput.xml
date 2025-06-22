@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<controller id="TrackOutputController" name="Track Output Controller" author="Your Name">
+  <scriptfiles>
+    <scriptfile filename="trackOutput.js"/>
+  </scriptfiles>
+  <controls>
+    <!-- Optional: map a button or knob if desired
+         Example: map MIDI CC 1 on channel 1 -->
+    <control>
+      <status>0xB0</status> <!-- MIDI CC on channel 1 -->
+      <midino>0x01</midino> <!-- CC number 1 -->
+      <group>[Master]</group>
+      <control>trackOutput</control> <!-- JS object name -->
+    </control>
+  </controls>
+</controller>
