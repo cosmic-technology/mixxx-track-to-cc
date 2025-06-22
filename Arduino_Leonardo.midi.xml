@@ -7,7 +7,7 @@
     </info>
     <controller id="Arduino">
         <scriptfiles>
-            <file functionprefix="trackOutput" filename="trackOutput.js"/>
+            <file functionprefix="trackOutput" filename="~/.mixxx/controllers/trackOutput.js"/>
         </scriptfiles>
         <controls/>
         <outputs/>
